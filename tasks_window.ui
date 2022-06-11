@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tasks_window</class>
+ <widget class="QWidget" name="tasks_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1543</width>
+    <height>779</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableView" name="taskslist_tableview">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>1011</width>
+     <height>591</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="choice_groupbox">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>0</y>
+     <width>431</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>choice</string>
+   </property>
+   <widget class="QPushButton" name="show_taskslist_pushbutton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show my tasks list</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_task_pushbutton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>40</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add a new task</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="searchtask_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>407</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>search a task details </string>
+    </property>
+    <widget class="QLabel" name="entertopicsearch_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>271</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>enter topic of the task you want it's details:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="topicsearch_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>93</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Description:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Priority:</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="destextEditenabledfalse">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>130</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>170</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>150</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>....</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="edittask_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>407</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Edit a task</string>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>401</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>click on Edit if you want to edit a task!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Edit_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="deletetask_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>407</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Delete a task </string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>381</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>enter topic of the task you want to delete it from your tasks list:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="topicdelete_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>40</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="done_task_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>407</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Done a task!</string>
+    </property>
+    <widget class="QLineEdit" name="whichtask_done_topic_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="whichtask_done_topic_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Which task you've done?type it's topic :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="done_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Done</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="undone_task_groupbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>407</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Undone a task!</string>
+    </property>
+    <widget class="QLabel" name="whichtask_undone_topic_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Which task you've undone?type it's topic :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="whichtask_undone_topic_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="undone_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>70</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>UnDone</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="gotocalenderwindow_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>600</y>
+     <width>171</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Go to Calender window</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>delete_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>show_taskslist_pushbutton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1281</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1193</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>done_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>show_taskslist_pushbutton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1258</x>
+     <y>801</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1142</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>undone_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>show_taskslist_pushbutton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1213</x>
+     <y>919</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1171</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
