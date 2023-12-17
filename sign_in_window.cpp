@@ -78,7 +78,7 @@ void sign_in_window::on_login_pushbutton_clicked()
     QString u,p;
     u=ui->username_lineedit->text();
     p=ui->password_lineedit->text();
-    if(u=="elahehmolaei" && p=="4001262728")
+    if(u=="SajjadRSH" && p=="S@jjad040804")
     {
         selection_tasks_calender_window *selection_tc_window = new selection_tasks_calender_window;
         selection_tc_window->resize(1000,900);

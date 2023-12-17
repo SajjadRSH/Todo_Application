@@ -25,6 +25,7 @@
 #include "QDateEdit"
 
 #include "calender_window.h"
+
 tasks_window::tasks_window(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::tasks_window)
@@ -33,12 +34,12 @@ tasks_window::tasks_window(QWidget *parent) :
 
     QSqlDatabase database ;
     database=QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("d:\\informations_of_tasks.db");
+    database.setDatabaseName("C:\\Users\\Sajjad\\Documents\\GitHub\\TodoApplication\\informations_of_tasks.db");
     database.open();
 
     ui->topicsearch_lineedit->setPlaceholderText("type here ...");
     ui->topicdelete_lineedit->setPlaceholderText("type here ...");
-    ui->destextEditenabledfalse->setReadOnly(true);//bara inke vaqte search taqiiresh ndm
+    ui->destextEditenabledfalse->setReadOnly(true); //bara inke vaqte search taqiiresh ndm
 
 }
 
@@ -51,7 +52,7 @@ void tasks_window::on_show_taskslist_pushbutton_clicked()
 {
 
     QSqlQuery q;//baraye ertebat ba data basi k bala moarrefi krdm
-    q.exec("SELECT * FROM tasks_list");//ghablan goftam kodom file hala migam hamechi az kodom tabele in file (*) :yani hamechi
+    q.exec("SELECT * FROM tasks_list"); //ghablan goftam kodom file hala migam hamechi az kodom tabele in file (*) :yani hamechi
     QSqlQueryModel *m = new QSqlQueryModel;
     m->setQuery(q);
 
@@ -91,7 +92,7 @@ void tasks_window::on_search_pushButton_clicked()
 
 void tasks_window::on_delete_pushButton_clicked()
 {
-    QSqlQuery q;//baraye ertebat ba data basi k bala moarrefi krdm
+    QSqlQuery q;    //baraye ertebat ba data basi k bala moarrefi krdm
     QString topic;
     topic = ui->topicdelete_lineedit->text();
     q.exec("DELETE FROM tasks_list WHERE Topic= '"+topic+"' ");
